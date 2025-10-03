@@ -5,7 +5,7 @@ description: Digital beings trained with human-grade skills, infinitely replicab
 
 # 🧠 Agent AI – The Virtual Replica of Human Intelligence
 
-### by [ThatAgentAICompany](https://thatagentai.com)
+### by [ThatAgentAICompany](https://thatagentaicompany.com)
 
 ---
 
