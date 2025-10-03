@@ -1,0 +1,10 @@
+---
+---
+@import "{{ site.theme }}";
+/* Custom tweaks */
+.page-header { padding: 2rem 1rem; }
+.project-name { font-size: 2.4rem; }
+.project-tagline { font-size: 1.1rem; }
+.main-content { max-width: 900px; margin: 0 auto; font-size: 18px; line-height: 1.65; }
+table { display: table; width: 100%; }
+blockquote { border-left: 4px solid #0366d6; padding-left: 1rem; color: #555; }
