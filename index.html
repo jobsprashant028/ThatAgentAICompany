@@ -9,27 +9,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
+  <style>html{scroll-behavior:smooth}</style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
+  <header class="site-header" id="top">
+    <nav class="nav sticky" id="navbar">
       <a class="brand" href="#top">ThatAgentAICompany</a>
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a class="btn small" href="https://github.com/jobsprashant028" target="_blank" rel="noopener">GitHub</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="btn small" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="btn small ghost" href="https://github.com/jobsprashant028" target="_blank" rel="noopener">GitHub</a>
       </div>
     </nav>
-    <section class="hero" id="top">
+    <section class="hero">
       <div class="pill">Open to Work</div>
       <h1>Hi, I'm <span class="accent">Prashant Kumar</span></h1>
       <p class="tagline">I design and build <strong>Agentic AI systems</strong> that replicate human expertise for enterprise-grade precision — plus the automation tooling that keeps them fast, testable, and safe.</p>
       <div class="cta">
-        <a class="btn" href="assets/resume.pdf" target="_blank">Download Resume</a>
+        <a class="btn" href="#projects">See Projects</a>
         <a class="btn ghost" href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn ghost" href="#projects">See Projects</a>
       </div>
     </section>
   </header>

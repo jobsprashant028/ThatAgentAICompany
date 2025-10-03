@@ -5,9 +5,7 @@
   --muted:#9db0c9;
   --brand:#00e676;
   --brand2:#1c8cff;
-  --card:#101938;
-  --card2:#0f1430;
-  --border:#223;
+  --border:#e7edf7;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -23,19 +21,27 @@ p{margin:.5rem 0 1rem}
 a{color:var(--brand2);text-decoration:none}
 a:hover{text-decoration:underline}
 
-/* ---------- Header / Hero ---------- */
+/* ---------- Sticky Navbar ---------- */
+.nav{
+  position:sticky; top:0; z-index:1000;
+  backdrop-filter:saturate(140%) blur(6px);
+  background:linear-gradient(120deg, rgba(15,92,196,.85), rgba(11,181,155,.85));
+  color:#fff;
+  max-width:100%; margin:0 auto;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: .7rem 1.2rem; border-bottom:1px solid rgba(255,255,255,.15);
+}
+.brand{font-weight:800;color:#fff;letter-spacing:.3px}
+.nav a{margin:0 .6rem;color:#eaf2ff}
+.nav .btn.small{padding:.35rem .7rem;border-radius:.7rem;border:1px solid rgba(255,255,255,.35)}
+.nav .nav-link.active{border-bottom:2px solid #fff}
+
+/* ---------- Hero ---------- */
 .site-header{
   background: linear-gradient(120deg, #0f5cc4 0%, #0bb59b 100%);
   color:#fff;
 }
-.nav{
-  max-width:1100px;margin:0 auto;
-  padding:1rem 1.2rem;display:flex;align-items:center;justify-content:space-between
-}
-.brand{font-weight:800;color:#fff;letter-spacing:.3px}
-.nav a{margin:0 .6rem;color:#eaf2ff}
-.nav .btn.small{padding:.4rem .7rem;border-radius:.7rem;border:1px solid rgba(255,255,255,.35)}
-.hero{max-width:900px;margin:2.4rem auto 3rem;padding:0 1.2rem 2rem;text-align:center}
+.hero{max-width:900px;margin:2.4rem auto 3rem;padding:3rem 1.2rem 2rem;text-align:center}
 .hero .pill{display:inline-block;background:rgba(255,255,255,.2);padding:.35rem .7rem;border-radius:999px;margin-bottom:.6rem}
 .hero h1{font-size:3rem;margin:.2rem 0 .6rem}
 .hero .accent{color:#e5ffef}
@@ -66,4 +72,4 @@ a:hover{text-decoration:underline}
 .contact .btn.ghost{background:transparent;color:#0b2a46;border-color:#0b2a46}
 
 /* Footer */
-.site-footer{border-top:1px solid #e7edf7;margin-top:2rem;padding:1rem;text-align:center;color:#5d6b86}
+.site-footer{border-top:1px solid var(--border);margin-top:2rem;padding:1rem;text-align:center;color:#5d6b86}
